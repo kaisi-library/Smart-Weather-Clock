@@ -14,6 +14,7 @@
 #include "stimage.h"
 #include "weather.h"
 
+
 static uint32_t runms;                                      // Run time in ms
 static uint32_t disp_height;                                // Display line height
 
@@ -266,9 +267,9 @@ int main(void)
 
         //获取网络信息：30 seconds 更新一次
         if(!ip_ok || !mac_ok || last_rumms % (30 * 1000) == 0)
-        {   
+        {
             snprintf(str, sizeof(str), "ssid:");
-            st7735_write_string(0, 159 - 48, str, &font_ascii_8x16, ST7735_WHITE, ST7735_BLACK);    
+            st7735_write_string(0, 159 - 48, str, &font_ascii_8x16, ST7735_WHITE, ST7735_BLACK);
             st7735_write_string(49, 159 - 48, wifi_ssid, &font_ascii_8x16, ST7735_WHITE, ST7735_BLACK); //显示wifi名称
 
             char ip[16];
