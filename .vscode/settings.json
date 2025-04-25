@@ -1,0 +1,20 @@
+
+{
+    "files.associations": {
+        "stdint.h": "c",
+        "main.h": "c",
+        "timer.h": "c",
+        "stdbool.h": "c",
+        "pwm.h": "c",
+        "stm32f10x.h": "c",
+        "weather.h": "c",
+        "stfonts.h": "c",
+        "st7735.h": "c",
+        "esp_at.h": "c",
+        "esp_usart.h": "c",
+        "stimage.h": "c"
+    },
+    "editor.wordWrap": "on",
+    "diffEditor.wordWrap": "on",
+    "chat.editor.wordWrap": "on"
+}
